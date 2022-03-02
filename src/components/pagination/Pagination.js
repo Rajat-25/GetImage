@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PageList from './PageList';
 function Pagination({ imagesArr, pageNo, changePage, goToCurr }) {
   const incPage = () => {

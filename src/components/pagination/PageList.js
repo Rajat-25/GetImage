@@ -4,7 +4,7 @@ const PageList = ({ imagesArr, pageNo, goToPage }) => {
   const items =
     imagesArr.length > 3
       ? imagesArr.map((el, i) => {
-          if (i == pageNo - 1) {
+          if (i === pageNo - 1) {
             return (
               <li key={i + 1} className='page-item'>
                 <button className='page-link'>{i + 1}</button>

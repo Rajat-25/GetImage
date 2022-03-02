@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class extends Component {
+class Image extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,3 +33,5 @@ export default class extends Component {
     );
   }
 }
+
+export default Image;

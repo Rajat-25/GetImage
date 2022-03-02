@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import GetImage from './GetImage';
 
 class Input extends Component {
   state = {
