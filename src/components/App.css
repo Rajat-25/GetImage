@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 1rem;
+  font-family: sans-serif;
+  line-height: 1;
+  background: rgb(65, 63, 63);
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.main {
+  max-width: 150rem;
+
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.input-main {
+  width: 100%;
+}
+.input-feild {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5rem;
+  outline: none;
+  border: 1px solid #777;
+  margin: 0.5rem 0;
+  font-size: 1.7rem;
+}
+
+.input-header {
+  display: flex;
+  justify-content: center;
+}
+.btn-search {
+  position: absolute;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #fff;
+  border: none;
+}
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.img-container {
+  padding: 1rem 0;
+  margin: 0 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 0 1rem;
+  grid-auto-rows: 1rem;
+}
+
+.img-item {
+  grid-row-end: span 2;
+  width: 25rem;
+  object-fit: contain;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-link {
+  font-size: 1.7rem;
+  background: rgb(110, 100, 100);
+  color: rgb(12, 11, 11);
+  border: 1px solid rgb(70, 65, 65);
+}
+
+.page-link:hover {
+  background-color: #777;
+  border: none;
+  color: rgb(12, 11, 11);
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 27%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
