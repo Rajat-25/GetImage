@@ -12,13 +12,15 @@ const PageList = ({ imagesArr, pageNo, goToPage }) => {
             );
           }
         })
-      : imagesArr.map((el, i) => (
-          <li key={i + 1} className='page-item'>
-            <button className='page-link' onClick={() => goToPage(i + 1)}>
-              {i + 1}
-            </button>
-          </li>
-        ));
+      : imagesArr.map((el, i) => {
+          return (
+            <li key={i + 1} className='page-item'>
+              <button className='page-link' onClick={() => goToPage(i + 1)}>
+                {i + 1}
+              </button>
+            </li>
+          );
+        });
 
   return <>{items}</>;
 };
