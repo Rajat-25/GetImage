@@ -14,9 +14,12 @@ class App extends Component {
   };
 
   setSearchText = (term) => {
-    this.setState({ searchText: term }, () => {
-      this.searchImage(term);
-    });
+    this.setState(
+      { searchText: term, currPage: 1, imgArr: [], imagesArr: [] },
+      () => {
+        this.searchImage(term);
+      }
+    );
   };
 
   searchImage = async (term) => {
